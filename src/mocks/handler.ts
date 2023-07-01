@@ -3,8 +3,8 @@ import { rest } from "msw";
 import { faker } from "@faker-js/faker";
 
 export const handlers = [
-  rest.get("/users", (req, res, ctx) => {
-    const mockUsers = new Array(3).fill(null).map((_, index) => ({
+  rest.get("/users", (_, res, ctx) => {
+    const mockUsers = new Array(3).fill(null).map(() => ({
       id: faker.number.int(),
       userName: faker.internet.userName(),
       name: faker.person.fullName(),
