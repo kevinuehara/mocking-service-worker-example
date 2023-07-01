@@ -8,7 +8,8 @@ export class UserService {
       email: "kevin@gmail.com",
       name: "kevin",
       userName: "uehara.kevin",
-      avatar: "https://avatars.githubusercontent.com/u/97165289",
+      avatar:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
     }));
 
     return Promise.resolve(mockUsers);
