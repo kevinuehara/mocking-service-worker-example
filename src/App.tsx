@@ -16,16 +16,7 @@ function App() {
       <button onClick={handleFetchUsers}>Fetch Data</button>
       {users &&
         users.map((user) => (
-          <div
-            key={user.id}
-            style={{
-              width: "50%",
-              display: "flex",
-              flexDirection: "column",
-              margin: "3px",
-              border: "1px solid #000",
-            }}
-          >
+          <div className="card" key={user.id}>
             <img src={user.avatar} width="100px" height="100px" />
             <label>Name: {user.name}</label>
             <label>UserName: {user.userName}</label>
